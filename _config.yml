@@ -1,0 +1,21 @@
+gems:
+  - bourbon
+  - neat
+  - octopress-autoprefixer
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  cachebust: soft
+
+# Site settings
+title: Jekyll Starter
+description: Prototyping starter kit for Jekyll
+
+# Name of project on Github
+baseurl: /proteus-jekyll
+
+# Build settings
+markdown: kramdown
