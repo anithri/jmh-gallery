@@ -1,0 +1,23 @@
+$base-background-color: #b4aa7a;
+$base-font-color: #663300;
+$secondary-background-color: #ffe2b3;
+$base-border-color: #00b0f0;
+
+$ovo-font-stack: 'Ovo', serif;
+$neutron-font-stack: 'Neuton', serif;
+
+$base-font-family: $ovo-font-stack;
+$heading-font-family: $neutron-font-stack;
+
+//$action-color: $blue !default;
+//// Border
+//$base-border-color: $light-gray !default;
+//$base-border: 1px solid $base-border-color !default;
+
+//// Forms
+//$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06) !default;
+//$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3) !default;
+
+//// Animations
+//$base-duration: 150ms !default;
+//$base-timing: ease !default;

@@ -1,0 +1,23 @@
+<div class="headerContainer">
+  <div class="logoCol">
+    {% img 'EagleLogo.png' class:'logo' size='150x150' %}
+  </div>
+  <div class="nameCol">
+    <h1 class="name">
+      Joe M Horvath
+    </h1>
+  </div>
+  <div class="navCol">
+    <nav>
+      <ul>
+        {% for nav in site.data.nav %}
+          <li>
+            <a href="{{ nav.href }}" title="{{ nav.title }}">
+              {{ nav.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

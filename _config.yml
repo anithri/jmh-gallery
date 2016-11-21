@@ -9,13 +9,28 @@ destination: build
 
 assets:
   cachebust: soft
+  assets:
+    - "*.png"
+
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+
 
 # Site settings
-title: Jekyll Starter
-description: Prototyping starter kit for Jekyll
+title: Joe M Horvath
+description: An Artit's Gallery
 
 # Name of project on Github
-baseurl: /proteus-jekyll
+baseurl: /
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

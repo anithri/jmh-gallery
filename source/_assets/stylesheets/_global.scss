@@ -1,19 +1,26 @@
 body {
-  background-color: $light-gray;
-  color: $medium-gray;
+  background-color: $base-background-color;
+  color: $base-font-color;
+
+  background-image: image_url('subtle_white_feathers_@2X-alpha-mask.png');
+  background-repeat: repeat;
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+header.page {
+  @include outer-container;
+}
 
-  .container {
-    text-align: center;
+main {
+  @include outer-container;
+}
 
-    h1 {
-      font-weight: 200;
-    }
-  }
+
+h1 {
+  font-size: $base-font-size * 2.4;
+}
+h2 {
+  font-size: $base-font-size * 2;
+}
+h3 {
+  font-size: $base-font-size * 1.8;
 }

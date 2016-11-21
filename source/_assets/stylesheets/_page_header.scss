@@ -1,0 +1,49 @@
+
+.headerContainer {
+  @include row();
+  background-color: $secondary-background-color;
+  border: $base-border;
+  margin-top: 1em;
+  height: 10em;
+}
+
+.logoCol {
+  @include span-columns(3);
+  img.logo {
+    height: 10em;
+    width: 10em;
+  }
+}
+
+.nameCol {
+  @include span-columns(6);
+  text-align: center;
+  padding-top: 2em;
+  h1 {
+    font-size: 4em;
+  }
+}
+
+.navCol {
+  @include span-columns(12);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  & ul {
+    display: flex;
+    & li {
+      flex: 0 1 auto;
+      padding: 0 2rem 1rem 2rem;
+      a {
+        color: $base-font-color;
+        font-style: italic;
+      }
+      &:hover {
+        transition:all 0.3s ease;
+        transform: scale(1.3);
+      }
+    }
+  }
+}

@@ -11,9 +11,16 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{% asset_path application.css %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton|Ovo">
+
   </head>
   <body>
-    {{ content }}
+    <header class="page">
+      {% include page_header.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
     <script type="text/javascript" src="{% asset_path application.js %}"></script>
   </body>
 </html>
