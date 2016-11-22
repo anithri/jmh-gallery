@@ -2,6 +2,7 @@ gems:
   - bourbon
   - neat
   - octopress-autoprefixer
+  - jekyll-assets
 
 # Structure configuration
 source: source
@@ -11,7 +12,7 @@ assets:
   cachebust: soft
   assets:
     - "*.png"
-
+    - "application.css"
   sources:
     - _assets/images
     - _assets/javascripts
@@ -34,3 +35,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
+collections:
+  - art
+

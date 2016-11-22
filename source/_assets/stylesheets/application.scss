@@ -2,11 +2,13 @@
 @import "vendor/normalize";
 @import "variables";
 
-@import "bourbon";
+@import "bourbon/bourbon";
 @import "base/base";
-@import "neat";
+@import "neat/neat";
+@import "vendor/w3";
 
 @import "utilities";
 
 @import "global";
 @import "page_header";
+@import "gallery";
