@@ -17,3 +17,8 @@
 .float-right {
   float: right;
 }
+
+small {
+  font-size: 70%;
+  color: desaturate( $base-font-color, 20% );
+}
