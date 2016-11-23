@@ -16,6 +16,14 @@
 
 .sideNav {
   flex: 0 0 auto;
+  background-color: $secondary-background-color;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  a {
+    text-align: center;
+    color: $base-font-color;
+  }
 }
 
 .w3-content {

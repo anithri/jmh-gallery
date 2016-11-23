@@ -6,14 +6,14 @@ title: The Joe M Horvath Gallery
 
 <div class="slideContainer">
   <div class="sideNav">
-    <a onclick="plusDivs(-1)">&#10094;</a>
+    <a onclick="plusDivs(-1)">&nbsp;&#10094;&nbsp;</a>
 
   </div>
 
   <div class="w3-content">
     {% for artwork in site.art %}
     <div class="mySlides w3-container" style="display: none;">
-      <img height="640" width="480" src="{{ artwork.src | prepend: '/art/' }}" class="slideImage"/>
+      <img height="400" width="640" src="{{ artwork.src | prepend: '/art/' }}" class="slideImage"/>
       <h3>
         {{artwork.name}} by {{artwork.creator}}
       </h3>
@@ -26,7 +26,7 @@ title: The Joe M Horvath Gallery
 
   </div>
   <div class="sideNav">
-    <a onclick="plusDivs(1)">&#10095;</a>
+    <a onclick="plusDivs(1)">&nbsp;&#10095;&nbsp;</a>
   </div>
 
 </div>
